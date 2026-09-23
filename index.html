@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー / Privacy Policy — Special Blocker for X</title>
+<meta name="description" content="Special Blocker for X (Chrome 拡張機能) のプライバシーポリシー / Privacy policy for the Special Blocker for X Chrome extension.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #0f1419;
+    --sub: #536471;
+    --border: #e1e8ed;
+    --accent: #1d74c4;
+    --code-bg: #f3f5f7;
+    --note-bg: #f7f9fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15181c;
+      --text: #e7e9ea;
+      --sub: #9aa4ad;
+      --border: #2f3336;
+      --accent: #6cb4f5;
+      --code-bg: #22272c;
+      --note-bg: #1c2024;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", Meiryo, Roboto, sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.35; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 2em 0 0.5em; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+  p, ul { margin: 0.6em 0; }
+  ul { padding-left: 1.4em; }
+  li { margin: 0.25em 0; }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.9em; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+  .meta { color: var(--sub); font-size: 0.9rem; margin: 0 0 1.2em; }
+  .lang { display: flex; gap: 12px; font-size: 0.9rem; margin-bottom: 24px; }
+  .note { background: var(--note-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; margin: 0.8em 0; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--note-bg); white-space: nowrap; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 56px 0; }
+  footer { color: var(--sub); font-size: 0.85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+
+<nav class="lang" aria-label="Language">
+  <a href="#ja">日本語</a>
+  <a href="#en">English</a>
+</nav>
+
+<!-- ==================== 日本語 ==================== -->
+<article id="ja" lang="ja">
+<h1>プライバシーポリシー — Special Blocker for X</h1>
+<p class="meta">制定日: 2026年9月23日<br>最終更新日: 2026年9月23日</p>
+
+<p>本ポリシーは、Chrome 拡張機能「Special Blocker for X」（以下「本拡張機能」）における情報の取り扱いを説明するものです。本拡張機能は X Corp. とは関係のない、非公式のツールです。</p>
+
+<h2>1. 概要</h2>
+<div class="note">
+<ul>
+  <li>開発者は、利用者の個人情報やデータを<strong>一切収集しません</strong>。</li>
+  <li>本拡張機能の設定やログは、すべて<strong>利用者の端末内</strong>（<code>chrome.storage.local</code>）にのみ保存されます。</li>
+  <li>アクセス解析、広告、トラッキング、開発者が運営する外部サーバーは使用していません。</li>
+  <li>本拡張機能が通信する相手は <strong>x.com / twitter.com のみ</strong>です。</li>
+</ul>
+</div>
+
+<h2>2. 端末内に保存する情報</h2>
+<p>次の情報は、利用者のブラウザ内（<code>chrome.storage.local</code>）にのみ保存され、開発者や第三者に送信されることはありません。</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>種類</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>設定</td><td>各機能のON/OFF、NGワード、除外ユーザーID、巡回URL、巡回スケジュール、巡回量、1時間あたりの自動ブロック上限などの設定値</td></tr>
+    <tr><td>ブロック履歴</td><td>ブロックした相手のユーザー名（@ID）、理由（例: 「NGワード: ○○」）、日時。直近50件と累計件数のみ</td></tr>
+    <tr><td>巡回履歴</td><td>巡回した日時、URL、サイトごとのブロック件数などの結果。直近20件のみ</td></tr>
+    <tr><td>動作用の情報</td><td>1時間あたりの自動ブロック数のカウント、投稿がなかったURLの一時スキップ期限、案内ページや支援バナーを表示済みかどうかの記録など</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>3. 保存せずに一時的に扱う情報</h2>
+<p>本拡張機能は、機能を実行するために次の情報を<strong>その場でのみ</strong>扱います。これらを保存したり、x.com / twitter.com 以外へ送信したりすることはありません。</p>
+<ul>
+  <li><strong>表示中のページの内容</strong>: NGワードの判定やブロック対象の特定のため、x.com 上に表示されているポストの本文・リンクURL・投稿者のユーザー名を読み取ります。</li>
+  <li><strong>ログイン中のセッション</strong>: ブロックなどの操作を行うため、利用者が x.com にログインしている既存のセッション（Cookie）を使って x.com にリクエストを送ります。その際、x.com のページ上にある CSRF 対策用のトークン（<code>ct0</code>）を読み取り、同じ x.com へのリクエストにのみ付与します。パスワードを扱うことはありません。</li>
+  <li><strong>フォロー関係</strong>: 誤ってフォロー中の相手をブロックしないよう、相手をフォローしているか・ブロック済みかを x.com に問い合わせ、結果をメモリ上に最大10分間だけ保持します。</li>
+</ul>
+
+<h2>4. 通信について</h2>
+<p>本拡張機能が行う通信は、利用者が設定・操作した機能を実行するための、x.com / twitter.com へのリクエストのみです。</p>
+<ul>
+  <li>ブロックの実行（<code>/i/api/1.1/blocks/create.json</code>）</li>
+  <li>フォロー／ブロック状況の確認（<code>/i/api/1.1/friendships/lookup.json</code>）</li>
+  <li>巡回機能で、利用者が登録した検索結果・コミュニティのページを開くこと</li>
+</ul>
+<p>これらは利用者自身のアカウントで X のサービスを利用する行為であり、X 上での情報の取り扱いには X のプライバシーポリシーが適用されます。</p>
+
+<h2>5. 第三者への提供</h2>
+<p>開発者は利用者のデータを受け取らないため、第三者に提供・販売・共有することはありません。本拡張機能は、利用者のデータを広告、信用力の判断、その他本拡張機能の目的と無関係な用途に使用しません。</p>
+<p>本拡張機能による情報の利用は、<a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store ユーザーデータに関するポリシー</a>（「Limited Use（使用の制限）」の要件を含む）に準拠しています。</p>
+
+<h2>6. 支援リンク（Ko-fi）</h2>
+<p>ポップアップ等にある支援リンクを押すと、拡張機能内の応援ページが新しいタブで開きます。応援ページには Ko-fi 公式の支援パネル（ko-fi.com の埋め込みウィジェット）とボタン画像が表示され、<b>このページを開いたときに限り</b> ko-fi.com / storage.ko-fi.com と通信します。ポップアップや X のページから Ko-fi に通信することはありません。本拡張機能から Ko-fi に利用者の情報（設定・ログ・X のアカウント情報など）を送ることはありません。支援の金額選択・お支払いは Ko-fi のパネル内で行われ、本拡張機能は支払い情報に触れません。Ko-fi 上での支援やお支払いには Ko-fi のプライバシーポリシーが適用されます。</p>
+
+<h2>7. 設定のエクスポート</h2>
+<p>設定のエクスポート機能を使うと、設定内容（NGワード、除外ユーザーID、巡回URLなど）を含む JSON ファイルが利用者の端末に保存されます。このファイルは利用者自身が管理するもので、本拡張機能がどこかへ送信することはありません。</p>
+
+<h2>8. データの削除</h2>
+<ul>
+  <li>ブロック履歴は、ポップアップの「ログ」タブにある「クリア」ボタンで削除できます。</li>
+  <li>本拡張機能をアンインストールすると、端末内に保存されたすべてのデータが Chrome により削除されます。</li>
+</ul>
+
+<h2>9. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合は、このページを更新し、上部の「最終更新日」を改めます。データの取り扱いに重要な変更がある場合は、拡張機能の更新内容でもお知らせします。</p>
+
+<h2>10. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせ: <a href="mailto:rkytono+dev@gmail.com">rkytono+dev@gmail.com</a></p>
+</article>
+
+<hr>
+
+<!-- ==================== English ==================== -->
+<article id="en" lang="en">
+<h1>Privacy Policy — Special Blocker for X</h1>
+<p class="meta">Effective date: September 23, 2026<br>Last updated: September 23, 2026</p>
+
+<p>This policy explains how the Chrome extension "Special Blocker for X" (the "Extension") handles information. The Extension is an unofficial tool and is not affiliated with X Corp.</p>
+
+<h2>1. Summary</h2>
+<div class="note">
+<ul>
+  <li>The developer does <strong>not collect</strong> any personal information or user data.</li>
+  <li>All settings and logs are stored <strong>only on your device</strong> (<code>chrome.storage.local</code>).</li>
+  <li>The Extension uses no analytics, advertising, tracking, or developer-operated servers.</li>
+  <li>The Extension communicates <strong>only with x.com / twitter.com</strong>.</li>
+</ul>
+</div>
+
+<h2>2. Information stored on your device</h2>
+<p>The following information is stored only in your browser (<code>chrome.storage.local</code>) and is never sent to the developer or any third party.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Type</th><th>Contents</th></tr></thead>
+  <tbody>
+    <tr><td>Settings</td><td>On/off state of each feature, NG words, whitelisted handles, patrol URLs, patrol schedule and amounts, hourly limit for automatic blocks, and similar settings</td></tr>
+    <tr><td>Block log</td><td>Handle (@username) of each blocked account, the reason (e.g. "NG word: …"), and the time. Only the latest 50 entries and a total count</td></tr>
+    <tr><td>Patrol history</td><td>Time, URLs, and per-site results such as the number of blocks. Only the latest 20 runs</td></tr>
+    <tr><td>Operational data</td><td>The hourly counter for automatic blocks, temporary skip periods for URLs that had no posts, and whether the onboarding page or support banner has been shown</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>3. Information handled temporarily and not stored</h2>
+<p>To perform its functions, the Extension handles the following information <strong>only in the moment</strong>. It is never stored, and never sent anywhere other than x.com / twitter.com.</p>
+<ul>
+  <li><strong>Content of the page you are viewing</strong>: To match NG words and identify whom to block, the Extension reads the text, link URLs, and author handles of posts displayed on x.com.</li>
+  <li><strong>Your logged-in session</strong>: To perform actions such as blocking, the Extension sends requests to x.com using your existing logged-in session (cookies). For this, it reads the CSRF token (<code>ct0</code>) available on the x.com page and attaches it only to requests to the same x.com. The Extension never handles your password.</li>
+  <li><strong>Follow relationships</strong>: To avoid blocking accounts you follow by mistake, the Extension asks x.com whether you follow or have already blocked an account, and keeps the result in memory for up to 10 minutes.</li>
+</ul>
+
+<h2>4. Network communication</h2>
+<p>The Extension only sends requests to x.com / twitter.com in order to perform the features you have configured or triggered:</p>
+<ul>
+  <li>Blocking an account (<code>/i/api/1.1/blocks/create.json</code>)</li>
+  <li>Checking follow/block status (<code>/i/api/1.1/friendships/lookup.json</code>)</li>
+  <li>Opening the search or community pages you registered, during a patrol</li>
+</ul>
+<p>These requests are made with your own account on X's service, and X's privacy policy applies to how information is handled on X.</p>
+
+<h2>5. Sharing with third parties</h2>
+<p>Because the developer receives none of your data, it is never provided, sold, or shared with third parties. The Extension does not use your data for advertising, for determining creditworthiness, or for any purpose unrelated to the Extension's single purpose.</p>
+<p>The use of information by the Extension complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>6. Support link (Ko-fi)</h2>
+<p>Clicking the support link (for example, in the popup) opens the Extension's own support page in a new tab. That page shows Ko-fi's official tip panel (an embedded ko-fi.com widget) and button image, so it connects to ko-fi.com / storage.ko-fi.com <b>only while that page is open</b>. The popup and X pages never contact Ko-fi. The Extension does not send any of your information (settings, logs, X account details, etc.) to Ko-fi. Choosing an amount and paying happen inside Ko-fi's panel; the Extension never touches payment details. Ko-fi's privacy policy applies to any support or payment you make on Ko-fi.</p>
+
+<h2>7. Settings export</h2>
+<p>When you use the settings export feature, a JSON file containing your settings (NG words, whitelisted handles, patrol URLs, etc.) is saved to your device. You control this file; the Extension does not send it anywhere.</p>
+
+<h2>8. Deleting your data</h2>
+<ul>
+  <li>You can delete the block log with the "Clear" button on the "Log" tab of the popup.</li>
+  <li>Uninstalling the Extension causes Chrome to delete all data the Extension stored on your device.</li>
+</ul>
+
+<h2>9. Changes to this policy</h2>
+<p>If this policy changes, this page will be updated and the "Last updated" date above will be revised. Significant changes to data handling will also be noted in the Extension's release notes.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <a href="mailto:rkytono+dev@gmail.com">rkytono+dev@gmail.com</a></p>
+</article>
+
+<footer>Special Blocker for X is not affiliated with, endorsed by, or sponsored by X Corp. / Special Blocker for X は X Corp. とは関係のない非公式ツールです。</footer>
+
+</main>
+</body>
+</html>
